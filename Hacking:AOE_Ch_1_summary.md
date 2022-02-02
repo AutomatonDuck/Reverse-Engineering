@@ -1,5 +1,7 @@
 #Programming
+
 ##Definition:
+
 programming is creating a set of instructions to follow, that's it; Its that simple.
 
 __Pseudo-Code__ is writing a program in plain english in a similar syntax to an actual programming language, its kind of the equivalent of measuring twice cutting once philosophy. 
