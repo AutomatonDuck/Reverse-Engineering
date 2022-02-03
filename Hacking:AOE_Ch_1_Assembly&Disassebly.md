@@ -2,7 +2,7 @@
 
 **Note:The following code and information will all be Linux based.**
 ##C and ASM
-C is a complied language, which means that the C program is translated to machine instructions
+[C](https://en.cppreference.com/w/c/languageasm) is a complied language, which means that the C program is translated to machine instructions
 which is then executed by the computer. C was developed to allow for cross platform programming between
 the various types of CPU architectures, such as the x86, sparc, etc. Each of these architectures has 
 a different set of machine code, and can because of this trying to develop programs in the native machine language of
@@ -21,6 +21,9 @@ int main(){
 ```
 This is an example of a C program
 
-ASM also called assembly is a low level language and represents actual machine language instructions. Within ASM you can see addresses, registers, bytes, and operations that a processor is performing. This is important for reverse-engineering as here in assembly we can put a program under a microscope and evaluate every little thing it is doing, and with the right tools, find out why its doing it.
+[ASM](references/ASM_Reference.pdf) also called assembly is a low level language and represents actual machine language instructions. Within ASM you can see addresses, registers, bytes, and operations that a processor is performing. This is important for reverse-engineering as here in assembly we can put a program under a microscope and evaluate every little thing it is doing, and with the right tools, find out why its doing it.
 
 ![Disassembled C program](images/hello_world_loop_asn.png)
+
+Here is the main function of the above C program disassembled into machine and ASM instructions. The set of instructions on the right are the asm instructions. The values on the left are memory addresses shown in hexadecimal, and the information in the middle in hexadecimal is the actual machine language instructions This is in the Intel format of ASM as opposed to the ATT version. Its just easier to read honestly.
+
