@@ -21,9 +21,12 @@ int main(){
 ```
 This is an example of a C program
 
-[ASM](references/ASM_Reference.pdf) also called assembly is a low level language and represents actual machine language instructions. Within ASM you can see addresses, registers, bytes, and operations that a processor is performing. This is important for reverse-engineering as here in assembly we can put a program under a microscope and evaluate every little thing it is doing, and with the right tools, find out why its doing it.
+[ASM](references/ASM_Reference.pdf) also called assembly is a low level language and represents actual machine language instructions. Within ASM you can see addresses, registers, bytes, and operations that a processor is performing. This is important for reverse-engineering as here in assembly we can put a program under a microscope and evaluate every little thing it is doing, and with the right tools, find out why its doing it. Linked on ASM is an x86 assembly reference from Oracle.
 
 ![Disassembled C program](images/hello_world_loop_asn.png)
 
 Here is the main function of the above C program disassembled into machine and ASM instructions. The set of instructions on the right are the asm instructions. The values on the left are memory addresses shown in hexadecimal, and the information in the middle in hexadecimal is the actual machine language instructions This is in the Intel format of ASM as opposed to the ATT version. Its just easier to read honestly.
 
+[objdump](https://man7.org/linux/man-pages/man1/objdump.1.html) is a a linux command which displays information about object files. The -D option disassembles all sections of the program and the -M allows for the selection of architecture. 
+
+Debuggers are tools that can be used to put programs under a microscope, and go through them step by step, which allows them to be analyzed. The debugger I will be using here is called [GDB](https://www.sourceware.org/gdb/documentation/)
