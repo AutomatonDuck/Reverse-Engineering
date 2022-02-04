@@ -29,4 +29,10 @@ Here is the main function of the above C program disassembled into machine and A
 
 [objdump](https://man7.org/linux/man-pages/man1/objdump.1.html) is a a linux command which displays information about object files. The -D option disassembles all sections of the program and the -M allows for the selection of architecture. 
 
-Debuggers are tools that can be used to put programs under a microscope, and go through them step by step, which allows them to be analyzed. The debugger I will be using here is called [GDB](https://www.sourceware.org/gdb/documentation/)
+Debuggers are tools that can be used to put programs under a microscope, and go through them step by step, which allows them to be analyzed. The debugger I will be using here is called [GDB](https://www.sourceware.org/gdb/documentation/).
+
+![GDB Example](images/GDB_Example.png)
+
+The above image shows the GDB debugger being run on the C program from earlier. A breakpoint, which is a way to stop the programs runtime at desired points, it set for the start of the main function, the command info registers displays the current state of all the CPU registers.
+
+Registers are memory locations used by the CPU. They can hold values, addresses, instructions, etc.
