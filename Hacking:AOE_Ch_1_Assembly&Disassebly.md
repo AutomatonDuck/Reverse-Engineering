@@ -35,4 +35,17 @@ Debuggers are tools that can be used to put programs under a microscope, and go 
 
 The above image shows the GDB debugger being run on the C program from earlier. A breakpoint, which is a way to stop the programs runtime at desired points, it set for the start of the main function, the command info registers displays the current state of all the CPU registers.
 
-Registers are memory locations used by the CPU. They can hold values, addresses, instructions, etc.
+Registers are memory locations used by the CPU. They can hold values, addresses, instructions, etc. The first four registers are general purpose registers. They act as variables for the CPU while it is performing tasks. They are as follows:
+* EAX - Accumulator
+* ECX - Counter
+* EDX - Data
+* EBX - Base
+
+The next four registers are pointers, or they hold addresses for use as source and destination. And they are as follows:
+* ESP - Stack Pointer
+* EBP - Base Pointer
+* ESI - Source Index
+* EDI - Destination Index
+
+The EIP is the instruction pointer, this is the pointer thats shows the current instruction the CPU is executing. The EFlags register is used for comparisons. Flags are like an indicator to the state of events the CPU is seeing. These flags can indicate things like if there is a carried bit after an operation (CF) or if interrupts are enabled (IF), or even if an operation resulted in a zero (ZF). There are other flags that exists, most of which are conditions that are result of arithmetic operations.
+
