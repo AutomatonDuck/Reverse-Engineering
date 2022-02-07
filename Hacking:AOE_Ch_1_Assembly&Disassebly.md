@@ -21,7 +21,7 @@ int main(){
 ```
 This is an example of a C program
 
-[ASM](references/ASM_Reference.pdf) also called assembly is a low level language and represents actual machine language instructions. Within ASM you can see addresses, registers, bytes, and operations that a processor is performing. This is important for reverse-engineering as here in assembly we can put a program under a microscope and evaluate every little thing it is doing, and with the right tools, find out why its doing it. Linked on ASM is an x86 assembly reference from Oracle.
+
 
 ![Disassembled C program](images/hello_world_loop_asn.png)
 
@@ -49,3 +49,4 @@ The next four registers are pointers, or they hold addresses for use as source a
 
 The EIP is the instruction pointer, this is the pointer thats shows the current instruction the CPU is executing. The EFlags register is used for comparisons. Flags are like an indicator to the state of events the CPU is seeing. These flags can indicate things like if there is a carried bit after an operation (CF) or if interrupts are enabled (IF), or even if an operation resulted in a zero (ZF). There are other flags that exists, most of which are conditions that are result of arithmetic operations.
 
+[ASM](references/ASM_Reference.pdf) also called assembly is a low level language and represents actual machine language instructions. Within ASM you can see addresses, registers, bytes, and operations that a processor is performing. This is important for reverse-engineering as here in assembly we can put a program under a microscope and evaluate every little thing it is doing, and with the right tools, find out why its doing it. Linked on ASM is an x86 assembly reference from Oracle.
