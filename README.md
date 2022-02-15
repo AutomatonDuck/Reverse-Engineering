@@ -6,3 +6,5 @@ but for now its pretty much a mix between a summary of the book: [_Hacking: The 
 along with my own personal knowledge on the topics discussed in the book.<br>
 **I am interested in developing a community and work with other interested in reverse engineering.<br>
 So feel free to fork this or reach out to colaberate** 
+
+*On Haiatus for the next few weeks*
